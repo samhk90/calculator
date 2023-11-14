@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="container-fluid cal_box">
+        <div class="container-fluid ip_box">
+            <input type="text" name="input" id="input">
+            <h2 id="display" style="text-align: right;">0</h2>
+        </div>
+        <div class="row ip_row">
+            
+                <button class="btn btn-outline-secondary ip_btn ips_btn" value="("   onclick="livescreen('(')">(</button>
+            
+            
+                <button class="btn btn-outline-secondary ip_btn ips_btn" value=")"  onclick="livescreen(')')">)</button>
+            
+            
+                <button class="btn btn-outline-secondary ip_btn ips_btn"    onclick="calc()">ans</button>
+            
+            
+                <button class="btn btn-outline-secondary ip_btn ips_btn"    onclick="backspace()">del</button>
+            
+           
+                <button class="btn btn-outline-secondary ip_btn ips_btn"    onclick="clearscreen()">clear</button>
+        
+    </div>
+    <div class="row ip_row">
+            
+        <button class="btn btn-outline-secondary ip_btn"  value="7"  onclick="livescreen('7')">7</button>
+    
+    
+        <button class="btn btn-outline-secondary ip_btn" value="8" onclick="livescreen('8')">8</button>
+    
+    
+        <button class="btn btn-outline-secondary ip_btn"  value="9"  onclick="livescreen('9')">9</button>
+    
+    
+        <button class="btn btn-outline-secondary ip_btn ips_btn"    onclick="livescreen('%')">%</button>
+    
+   
+        <button class="btn btn-outline-secondary ip_btn ips_btn"    onclick="livescreen('^')">^</button>
+
+</div>
+<div class="row ip_row">
+            
+    <button class="btn btn-outline-secondary ip_btn"  value="4"  onclick="livescreen('4')">4</button>
+
+
+    <button class="btn btn-outline-secondary ip_btn" value="5" onclick="livescreen('5')">5</button>
+
+
+    <button class="btn btn-outline-secondary ip_btn"   value="6" onclick="livescreen('6')">6</button>
+
+
+    <button class="btn btn-outline-secondary ip_btn ips_btn"  value="*"  onclick="livescreen('*')">X</button>
+
+
+    <button class="btn btn-outline-secondary ip_btn ips_btn" value="/"   onclick="livescreen('/')">/</button>
+
+</div>
+<div class="row ip_row">
+            
+    <button class="btn btn-outline-secondary ip_btn"  value="1"  onclick="livescreen('1')">1</button>
+
+
+    <button class="btn btn-outline-secondary ip_btn" value="2" onclick="livescreen('2')">2</button>
+
+
+    <button class="btn btn-outline-secondary ip_btn" value="3"   onclick="livescreen('3')">3</button>
+
+
+    <button class="btn btn-outline-secondary ip_btn ips_btn"  value="+"  onclick="livescreen('+')">+</button>
+
+
+    <button class="btn btn-outline-secondary ip_btn ips_btn" value="-"   onclick="livescreen('-')">-</button>
+
+</div>
+<div class="row ip_row">
+            
+    <button class="btn btn-outline-secondary ip_btn ips_btn" value="."   onclick="livescreen('.')">.</button>
+
+
+    <button class="btn btn-outline-secondary ip_btn" value="0" onclick="livescreen('0')">0</button>
+
+
+    <button class="btn btn-outline-secondary ip_btn ips_btn"    onclick="livescreen('+')" ondblclick="livescreen('-')">+/-</button>
+
+
+    <button class="btn btn-outline-secondary ip_btn ips_btn enter_btn"    onclick="calc()">  ENTER</button>
+
+
+</div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
